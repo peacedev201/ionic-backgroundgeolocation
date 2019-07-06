@@ -1,0 +1,26 @@
+<ion-header>
+  <div>
+    <ion-title>
+      <img style = "width:4vh; " src = "assets/imgs/logo1.png"/>
+       <span style="font-size: 25px">&nbsp;&nbsp;SAR-REG</span>
+      
+    </ion-title>
+  </div>
+</ion-header>
+
+<ion-content padding>
+  <h2 style = "text-align: center; height: 10vh ; margin-top: 5vh">Sporings klient</h2>
+  <p style = "width: 70%; text-align: center; margin: auto; height: 10vh;vertical-align: auto">
+      Skriv inm ditt telefonnummer i feltet under for å fortsette.
+  </p>
+  <ion-input  [(ngModel)]="inputValue" style = "background-color:lightgray; width: 90% ; margin: auto" placeholder="Telefonnummer.."></ion-input>
+  <button ion-button style="margin-left:15%;margin-right:15%; margin-top: 5vh; background-color:green; width: 70%"  (click) = "gotrackpage()">Fortsett</button>
+  <div style="text-align: center; height: 10vh;">
+    <ion-checkbox [(ngModel)]="checkValue" style="margin-top: 5vh"></ion-checkbox>
+    <span style="font-size: 18px">&nbsp;&nbsp; I remember your phonenumber</span>
+  </div>
+  <p style="width: 80%; text-align: center; margin: auto"> 
+      Om du fortsetter godkjenner du at Sar-Reg kan lagre og bruke din enhets posisjon i den aktuelle aksjonen du er med i.
+  </p>
+</ion-content>
+

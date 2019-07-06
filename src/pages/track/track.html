@@ -1,0 +1,24 @@
+<ion-header>
+    <div>
+        <ion-title>
+        <img style = "width:4vh; " src = "assets/imgs/logo1.png"/>
+            <span style="font-size: 25px">&nbsp;&nbsp;SAR-REG</span>
+        
+        </ion-title>
+    </div>
+</ion-header>
+    
+<ion-content padding>
+        <button ion-button style="margin-left: 76%; margin-top: 1vh; background-color:lightgreens; width: 20%; height:2rem" (click)="logout()" >Log out</button>
+    <p style = "width: 70%;font-size: 25px; text-align: center; margin-top: 7vh; height: 5vh;vertical-align: auto">
+            Ditt telefonnummer:
+    </p>
+    <ion-label style = "text-align: center; font-size:25px; background-color:lightgray; width: 90% ; margin: auto;" >{{data}}</ion-label>
+    <ion-label style = "text-align: center; font-size:25px; background-color:lightgray; width: 90% ; margin: auto;" ></ion-label>
+    <p style="width: 80%; font-size:16px;text-align: center; margin:auto; margin-top: 10vh !important"> 
+            Trykk på kappen under for å starte eller stoppe sporing av din enhet. 
+    </p>
+    <button ion-button style="margin-left:20%;margin-right:20%; margin-top: 5vh; background-color:green; width: 60%" (click) = "startLocation('true')">Start sporing</button>
+    <button ion-button style="margin-left:20%;margin-right:20%; margin-top: 5vh; background-color:red; width: 60%"  (click) = "startLocation('false')">Stop sporing</button>
+</ion-content>
+    
